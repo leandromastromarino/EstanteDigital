@@ -18,36 +18,34 @@ import {
 import CartWidget from "../CartWidget/CartWidget.js";
 import FormSearch from "../Form-Search/Form-Search.js";
 import Logo from "../../img/Logo.png";
+import Carrito from "../CartWidget/Carrito.js";
 const products = [
   {
-    name: "Terror",
-    description: "Get a better understanding of your traffic",
-    href: "#",
+    name: "Novela",
+    description: "Para entretenernos",
+    href: "/ShopArchive/novela",
     icon: ChartPieIcon,
   },
   {
-    name: "Ayuda Personal",
-    description: "Speak directly to your customers",
-    href: "#",
+    name: "Ciencia",
+    description: "De donce vinimos",
+    href: "/ShopArchive/ciencia",
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "Novelas",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
+    name: "Cocina",
+    description: "Las mejores recetas",
+    href: "/ShopArchive/cocina",
     icon: FingerPrintIcon,
   },
   {
-    name: "Historia",
-    description: "Connect with third-party tools",
-    href: "#",
+    name: "Economia",
+    description: "Aprende de micro y macroeconomia",
+    href: "/ShopArchive/economia",
     icon: SquaresPlusIcon,
   },
 ];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
+const callsToAction = [{ name: "Contacto", href: "#", icon: PhoneIcon }];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -175,7 +173,7 @@ export default function Navbar() {
       </nav>
       <div className="flex items-center justify-center lg:invisible mt-n10">
         <div className="fixed top-8 ">
-          <CartWidget />
+          <Carrito />
         </div>
       </div>
       <Dialog
